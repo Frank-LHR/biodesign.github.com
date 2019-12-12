@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>科研活动-工业生物数据中心</title> 
+    <link href="CSS/cnz01main.css" rel="stylesheet" type="text/css"> 
+    <link href="CSS/cnz01outline.css" rel="stylesheet" type="text/css"> 
+    <meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></head> 
+<body onload="init(); preloadImages();">
+    <script language="JavaScript">
+        function num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt) {
+            var nCurrIndex = _nCurrIndex || 0;
+            if (nCurrIndex == 0)
+                document.write("<span style='color:#007355'>1</span>&nbsp;");
+            else
+                document.write("<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "." + _sPageExt + "\">1</a>&nbsp;");
+
+            for (var i = 1; i < _nPageCount; i++) {
+                if (nCurrIndex == i)
+                    document.write("<span style='color:#007355'>" + (i + 1) + "</span>&nbsp;");
+                else
+                    document.write("<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "_" + i + "." + _sPageExt + "\">" + (i + 1) + "</a>&nbsp;");
+            }
+            return "";
+        }
+
+        function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt) {
+        if (_nPageCount == null || _nPageCount <= 1) {
+            return;
+        }
+
+        var nCurrIndex = _nCurrIndex || 0;
+
+        if (_nPageCount == 2) {
+            if (nCurrIndex == 0) {
+                document.write("<span style='color:#007355'>1</span>&nbsp;<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">2</a>&nbsp;<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+            }
+            else if (nCurrIndex == 1) {
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "." + _sPageExt + "\">【上一页】</a>&nbsp;<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "." + _sPageExt + "\">1</a>&nbsp;<span style='color:#007355'>2</span>&nbsp;");
+            }
+        }
+        else {
+
+            if (nCurrIndex == 0) {
+                document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+            }
+            else if (nCurrIndex == 1) {
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "." + _sPageExt + "\">【上一页】</a>&nbsp;");
+                document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+            }
+            else if (nCurrIndex == (_nPageCount - 1)) {
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex - 1) + "." + _sPageExt + "\">【上一页】</a>&nbsp;");
+                document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+            }
+            else {
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex - 1) + "." + _sPageExt + "\">【上一页】</a>&nbsp;");
+                document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+            }
+        }
+
+    }
+    </script>
+ 
+    <style>
+ 
+       #navigation * {
+            padding:0; 
+            margin:0;
+			      z-index:5
+			
+        }
+        #navigation, #navigation li ul {
+            list-style-type:none;
+			      z-index:5;
+			      margin:0 auto;
+            line-height:30px;
+
+        } 
+        #navigation li { float:left; text-align:center; position:relative;
+        vertical-align:middle; line-height:30px;
+
+				 
+        }
+        #navigation li a {
+            display:block; 
+            text-decoration:none; 
+            color:#FFFFFF; 
+            width:75px; 
+        }
+        #navigation li a:hover {
+            color: #fff;
+			      text-decoration: underline;
+		
+			
+        }
+		#navigation li ul li,#navigation li ul li a{	
+			 background:#E2EFF7;
+             border-right: medium none; 
+             border-top: medium none; 
+             font-size: 12px; 
+             border-left: medium none; 
+             cursor: hand; 
+             color: #4a4b4b; 
+             border-bottom: medium none; 
+             font-family: verdana, arial, helvetica, sans-serif; 
+             text-decoration: none;
+             width:100px; 
+		}
+        #navigation li ul li a:hover {
+            color:#FF7110;
+			text-decoration:none;
+        }
+        #navigation li ul {
+            display:none;
+            position:absolute; 
+            top:25px;
+            left:0;
+            margin-top:1px;
+            width:120px;
+        }
+        #navigation li ul li ul {
+            display:none;
+            position:absolute; 
+            top:0px;
+            left:88px; 
+            margin-top:0;
+            margin-left:1px;
+			text-align:center;
+            width:90px;
+        }
+		
+		body{
+            font-size:12px; 
+            font-family:"宋体";
+            margin:0 auto;
+            padding:0;
+            border:0; 
+            background:#E4F0F7 url(cnc5_bg.jpg) repeat-x; 
+            z-index:5;}
+
+        .dhbox{
+	        background:url(http://www.tib.cas.cn/images/1c.png) ;
+	        border:1px solid #063771;
+	        margin:0 auto;
+	        width:1000px;
+	        height:30px;
+	        line-height:30px;
+	        margin-bottom:2px;
+	        font-size:12px;
+	        font-family:"宋体";
+	        font-style:normal;
+	        color:#FFFFFF;
+	        z-index:5;
+	        text-align:center;   /* 文字在父容器中水平居中 */
+
+	
+        }
+        .dhbox a{
+	        font-size:12px;
+	        font-family:"宋体";
+	        font-style:normal;
+	        font-weight:bold;
+	        color:#FFFFFF;
+        }
+        .dhbox a:hover {
+	        color: #eb8022;
+	        text-decoration: underline;
+        }
+
+
+
+        a  { 
+            color:#2B3E68 ;
+            text-decoration: none;
+
+        }
+        a:hover{
+	        color:#363636;
+	        text-decoration:underline;
+        }
+        #tplink span { padding:7px 14px 0px 14px; background:url(cnz01tdot.gif) top left no-repeat; color:#797979; font-size:12px; height:100%;}
+        #tplink span a { color:#797979; font-size:12px; text-decoration:none;}
+        #tplink span a:hover { color:#1c7deb;}
+
+        </style>
+
+    <label id="userip" style="display: none;">
+        <script src="images/getip.htm"></script>
+    </label> 
+    <script type="text/javascript">
+
+        function displaySubMenu(li) {
+            var subMenu = li.getElementsByTagName("ul")[0];
+            subMenu.style.display = "block";
+        }
+        function hideSubMenu(li) {
+            var subMenu = li.getElementsByTagName("ul")[0];
+            subMenu.style.display = "none";
+        }
+        </script>
+ 
+    <!--Top-Nav-->
+    <table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td>
+                    <!--Undated-->
+                    <div class="dhbox">
+                        <ul id="navigation" style="margin-left: -30px;">
+                            <li style="width: 170px;"><a style="width: 150px;" href="HomePage.html" target="_top">
+                                <img src="images/Title_1.png" width="170px" height="auto"></a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="HomePage.html" target="_top">概况简介       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Team_Intro.html" target="_top">人才队伍       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Research_1.html" target="_top">科研活动       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Paper_index_1.html" target="_top">论文           </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Co_Service_1.html" target="_top">服务合作       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="JoinUs.html" target="_top">招生招聘       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="DB_List.html" target="_top">数据库网站     </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Progress_List.html" target="_top">科研进展       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="News_List.html" target="_top">动态新闻       </a></li>
+                        </ul>
+
+                    </div><!--Updateded-->
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <!--Main section-->
+    <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#e4f0f7">
+  <tr>
+    <td width="100%" align="center" valign="top" background="../../../images/cnz01ot3_01.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0" background="../../../images/cnz01ot4_01.gif">
+      <tr>
+        <td width="20" height="46">&nbsp;</td>
+        <td width="100%" valign="top" class="w12l20" style="padding-top:4px; text-align:left;">您现在的位置：<a href="HomePage.html" title="首页" class=w12l20 class="CurrChnlCls">首页</a>&nbsp;>&nbsp;<a href="JoinUs.html" title="招生招聘" class=w12l20 class="CurrChnlCls">招生招聘</a></td>
+      </tr>
+    </table>
+      <TABLE width=1000 border="0" cellpadding="0" cellspacing="0">
+          <TBODY>
+            <TR vAlign=top align=left> 
+              <TD vAlign=top align=left width=6 bgColor=#e4f0f7><IMG height=164 src="../../../images/cnz01ot6.gif" width=6 /></TD>
+              <TD width="100%" align="center"> 
+                <TABLE cellSpacing=0 cellPadding=0 width=940 background="../../../images/title_body02.gif" border=0>
+                  <TBODY>
+                    <TR> 
+                      <TD vAlign=top align=middle width="100%">
+					  <TABLE class=blu23l28 cellSpacing=0 cellPadding=0 width="100%" border=0>
+                          <TBODY>
+                            <TR> 
+                              <TD valign="top"><IMG height=16 src="../../../images/title_body01.gif" width=940 /></TD>
+                            </TR>
+                            <TR> 
+                              <TD style="FONT-WEIGHT: normal; FONT-SIZE: 20px; COLOR: #01326f; LINE-HEIGHT: 35px; PADDING-TOP: 3px; FONT-FAMILY: '黑体'; HEIGHT: 35px; TEXT-ALIGN: center" vAlign=top align=middle width="100%">国家合成生物技术创新中心</TD>
+                            </TR>
+                              <TR>
+                              <TD style="FONT-WEIGHT: normal; FONT-SIZE: 20px; COLOR: #01326f; LINE-HEIGHT: 35px; PADDING-TOP: 3px; FONT-FAMILY: '黑体'; HEIGHT: 35px; TEXT-ALIGN: center" vAlign=top align=middle width="100%">中国科学院天津工业生物技术研究所</TD></TR><TR>
+                              <TD style="FONT-WEIGHT: normal; FONT-SIZE: 20px; COLOR: #01326f; LINE-HEIGHT: 35px; PADDING-TOP: 3px; FONT-FAMILY: '黑体'; HEIGHT: 35px; TEXT-ALIGN: center" vAlign=top align=middle width="100%">生物设计中心招聘启事</TD>
+                            </TR>
+                          </TBODY>
+                        </TABLE>
+                        <TABLE style="BORDER-BOTTOM: #d1d1d1 0px dotted" cellSpacing=0 cellPadding=0 width="100%" border=0>
+                          <TBODY>
+                            <TR> 
+                              <TD><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td height="5"></td>
+                                </tr>
+								<tr>
+                                  <td height="1" bgcolor="c8d8f2"></td>
+                                </tr>
+								<tr>
+                                  <td height="5"></td>
+                                </tr>
+                              </table></TD>
+                            </TR>
+                            
+                          </TBODY>
+                        </TABLE>
+                        <TABLE width="90%" border=0 align="center" cellPadding=0 cellSpacing=0 class=h14l24>
+                          <TBODY>
+                            <TR> 
+                              <TD id=zoom vAlign=top class=h14l24>
+                                  <div class=TRS_Editor>
+                                    <p align="justify"><span>&nbsp;&nbsp;国家合成生物技术创新中心是科技部继高铁及新能源汽车后批复的第三个国家级技术创新中心，是生物领域第一个，也是第一个依托科研院所的国家技术创新中心。技创中心依托中科院天津工业生物技术研究所建设，位于天津市自由贸易区空港经济区。其强调生物学与其它学科交叉的新生物学，生物设计平台是中心建设的三个主要技术支撑平台之一，致力于IT+BT技术体系的建立。现公开招聘如下人员：</span>&nbsp;</p>
+                                    
+                                      <p align="justify">　　<strong><span>（一）青年英才</span></strong>&nbsp;</p>
+                                      <p align="justify">　　<span>国外三年以上博士后研究经历，具有生物学和数学、计算机科学等的交叉研究经历，在国际高水平刊物发表多篇研究论文，能提出与中心发展契合的明确研究方向并负责相关方向的团队建设。中心将提供青年英才发展项目支持经费三年500-900万元，生活补贴最高150万元，薪酬50-60万/年。</span>&nbsp;</p>
+                                      
+                                      <p align="justify">　　<b><span>（二）博士后</span></b>&nbsp;</p>
+                                      <p align="justify">　　<span>计算生物学相关研究经历，发表过高水平研究论文，具有独立研究能力，能协助指导硕士博士负责特定研究方向的工作。享受天津市和滨海新区各项待遇，薪酬补贴加和34-50万元/年，出站直接竞聘副研，特别优秀的可破格申请研究员。</span>&nbsp;</p>
+
+                                      <p align="justify">　　<strong><span>（三）研究助理</span></strong>&nbsp;</p>
+                                      <p align="justify">　　<span>计算生物学相关硕士以上学历，有论文网站软件等成果证明具有通过编程解决生物学问题的能力，工资及福利待遇优厚，享受补充公积金，推荐读博。</span>&nbsp;</p>
+
+                                      <p align="justify">　　<strong><span>（四）IT支持人员</span></strong>&nbsp;</p>
+                                      <p align="justify">　　<span>IT相关本科以上学历，具有云计算、人工智能及大数据分析、网站前后端开发、数据可视化等工作经历，熟悉python,JS编程，依托合成生物技术创新中心平台化公司，根据工作经验能力及绩效成果确定薪酬。</span>&nbsp;</p>
+　
+                                      <p align="justify"><span>招聘人数不限，有意者请将简历发送至ma_hw@tib.cas.cn </span>&nbsp;</p>
+                                  </div></TD>
+                            </TR>
+                            <TR>
+                              <TD height="20"></TD>
+                            </TR>
+								<TR> 
+                              <TD height="1" bgcolor="c8d8f2"></TD>
+                            </TR>
+								<TR>
+								  <TD><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td height="40"><div align="right">【<a href="#" onClick="window.print()"  class="black13">打印</a>】&nbsp;&nbsp;【<a href="#" onClick="window.close();" class="black13">关闭</a>】&nbsp;&nbsp;【<a href="#" onClick="window.history.back();" class="black13">返回</a>】</div></td>
+                                    </tr>
+                                  </table></TD>
+						    </TR>
+                          </TBODY>
+                        </TABLE>
+                       
+                        <DIV id=attach style="DISPLAY: none"> 
+                          <TABLE class=h14l24 cellSpacing=0 cellPadding=0 width="84%" align=center border=0>
+                            <TR> 
+                                <TD vAlign=top>附件下载：<ol>		
+				</ol></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+					<TR>
+                              <TD height="20"></TD>
+                    </TR>
+					<TR>
+                      <TD height="1" bgcolor="#c1d9f4">
+					  </TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+              </TD>
+          <TD vAlign=top align=left width=6 bgColor=#e4f0f7><IMG height=164 src="../../../images/cnz01ot6.gif" width=6 /></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+	  </td>
+  </tr>
+</table>
+
+
+
+
+    
+    <!--Bottom section-->
+    <table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="1000"><img width="1000" height="9" src="images/cnz01ot8.gif"></td></tr></tbody>
+
+    </table>
+    <table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr></tbody>
+
+    </table>
+    <table width="1000" height="8" align="center" bgcolor="#e4f0f7" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="1000"></td></tr></tbody></table>
+    <table width="1000" height="3" align="center" bgcolor="#387fc6" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="982" align="right"></td></tr></tbody></table>
+    <table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="1000" height="3" bgcolor="#1a76bb" colspan="4"></td></tr>
+            <tr>
+                <td width="285" height="100" align="center">
+                    <a href="http://www.cas.cn/" target="_blank"><img width="200" height="77" src="images/cas_logo.gif" border="0"></a></td>
+                <td width="715" align="left" class="cnphui12_20" style="color: rgb(0, 0, 0); line-height: 22px; letter-spacing: 1px; padding-top: 2px; font-family: Lucida Sans Unicode,Verdana; font-size: 12px;">Copyright 2012 All Rights Reserved 中国科学院天津工业生物技术研究所　版权所有<br>      通讯地址：天津空港经济区西七道32号，邮编：300308<br>电话：022-84861997/84861977，传真：022-84861926，邮箱：tib_zh(AT)tib.cas.cn<br>京ICP备05002857号</td></tr></tbody></table>
+
+</body>
+</html>

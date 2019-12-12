@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>论文：第3页</title> 
+    <link href="CSS/cnz01main.css" rel="stylesheet" type="text/css"> 
+    <link href="CSS/cnz01outline.css" rel="stylesheet" type="text/css"> 
+    <meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></head> 
+<body onload="init(); preloadImages();">
+    <script language="JavaScript">
+        function num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt) {
+            var nCurrIndex = _nCurrIndex || 0;
+            if (nCurrIndex == 0)
+                document.write("<span style='color:#007355'>1</span>&nbsp;");
+            else
+                document.write("<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "." + _sPageExt + "\">1</a>&nbsp;");
+
+            for (var i = 1; i < _nPageCount; i++) {
+                if (nCurrIndex == i)
+                    document.write("<span style='color:#007355'>" + (i + 1) + "</span>&nbsp;");
+                else
+                    document.write("<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "_" + i + "." + _sPageExt + "\">" + (i + 1) + "</a>&nbsp;");
+            }
+            return "";
+        }
+
+        function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt) {
+            if (_nPageCount == null || _nPageCount <= 1) {
+                return;
+            }
+
+            var nCurrIndex = _nCurrIndex || 0;
+
+            if (_nPageCount == 2) {
+                if (nCurrIndex == 0) {
+                    document.write("<span style='color:#007355'>1</span>&nbsp;<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">2</a>&nbsp;<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+                }
+                else if (nCurrIndex == 1) {
+                    document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "." + _sPageExt + "\">【上一页】</a>&nbsp;<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "." + _sPageExt + "\">1</a>&nbsp;<span style='color:#007355'>2</span>&nbsp;");
+                }
+            }
+            else {
+
+                if (nCurrIndex == 0) {
+                    document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                    document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+                }
+                else if (nCurrIndex == 1) {
+                    document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "." + _sPageExt + "\">【上一页】</a>&nbsp;");
+                    document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                    document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+                }
+                else if (nCurrIndex == (_nPageCount - 1)) {
+                    document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex - 1) + "." + _sPageExt + "\">【上一页】</a>&nbsp;");
+                    document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                }
+                else {
+                    document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex - 1) + "." + _sPageExt + "\">【上一页】</a>&nbsp;");
+                    document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                    document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+                }
+            }
+
+        }
+    </script>
+ 
+    <style>
+ 
+       #navigation * {
+            padding:0; 
+            margin:0;
+			      z-index:5
+			
+        }
+        #navigation, #navigation li ul {
+            list-style-type:none;
+			      z-index:5;
+			      margin:0 auto;
+            line-height:30px;
+
+        } 
+        #navigation li { float:left; text-align:center; position:relative;
+        vertical-align:middle; line-height:30px;
+
+				 
+        }
+        #navigation li a {
+            display:block; 
+            text-decoration:none; 
+            color:#FFFFFF; 
+            width:75px; 
+        }
+        #navigation li a:hover {
+            color: #fff;
+			      text-decoration: underline;
+		
+			
+        }
+		#navigation li ul li,#navigation li ul li a{	
+			 background:#E2EFF7;
+             border-right: medium none; 
+             border-top: medium none; 
+             font-size: 12px; 
+             border-left: medium none; 
+             cursor: hand; 
+             color: #4a4b4b; 
+             border-bottom: medium none; 
+             font-family: verdana, arial, helvetica, sans-serif; 
+             text-decoration: none;
+             width:100px; 
+		}
+        #navigation li ul li a:hover {
+            color:#FF7110;
+			text-decoration:none;
+        }
+        #navigation li ul {
+            display:none;
+            position:absolute; 
+            top:25px;
+            left:0;
+            margin-top:1px;
+            width:120px;
+        }
+        #navigation li ul li ul {
+            display:none;
+            position:absolute; 
+            top:0px;
+            left:88px; 
+            margin-top:0;
+            margin-left:1px;
+			text-align:center;
+            width:90px;
+        }
+		
+		body{
+            font-size:12px; 
+            font-family:"宋体";
+            margin:0 auto;
+            padding:0;
+            border:0; 
+            background:#E4F0F7 url(cnc5_bg.jpg) repeat-x; 
+            z-index:5;}
+
+        .dhbox{
+	        background:url(http://www.tib.cas.cn/images/1c.png) ;
+	        border:1px solid #063771;
+	        margin:0 auto;
+	        width:1000px;
+	        height:30px;
+	        line-height:30px;
+	        margin-bottom:2px;
+	        font-size:12px;
+	        font-family:"宋体";
+	        font-style:normal;
+	        color:#FFFFFF;
+	        z-index:5;
+	        text-align:center;   /* 文字在父容器中水平居中 */
+
+	
+        }
+        .dhbox a{
+	        font-size:12px;
+	        font-family:"宋体";
+	        font-style:normal;
+	        font-weight:bold;
+	        color:#FFFFFF;
+        }
+        .dhbox a:hover {
+	        color: #eb8022;
+	        text-decoration: underline;
+        }
+
+
+
+        a  { 
+            color:#2B3E68 ;
+            text-decoration: none;
+
+        }
+        a:hover{
+	        color:#363636;
+	        text-decoration:underline;
+        }
+        #tplink span { padding:7px 14px 0px 14px; background:url(cnz01tdot.gif) top left no-repeat; color:#797979; font-size:12px; height:100%;}
+        #tplink span a { color:#797979; font-size:12px; text-decoration:none;}
+        #tplink span a:hover { color:#1c7deb;}
+
+        </style>
+
+    <label id="userip" style="display: none;">
+        <script src="images/getip.htm"></script>
+    </label> 
+    <script type="text/javascript">
+
+        function displaySubMenu(li) {
+            var subMenu = li.getElementsByTagName("ul")[0];
+            subMenu.style.display = "block";
+        }
+        function hideSubMenu(li) {
+            var subMenu = li.getElementsByTagName("ul")[0];
+            subMenu.style.display = "none";
+        }
+        </script>
+ 
+    <!--Top-Nav-->
+    <table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td>
+                    <!--Undated-->
+                    <div class="dhbox">
+                        <ul id="navigation" style="margin-left: -30px;">
+                            <li style="width: 170px;"><a style="width: 150px;" href="HomePage.html" target="_top">
+                                <img src="images/Title_1.png" width="170px" height="auto"></a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="HomePage.html" target="_top">概况简介       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Team_Intro.html" target="_top">人才队伍       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Research_1.html" target="_top">科研活动       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Paper_index_1.html" target="_top">论文           </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Co_Service_1.html" target="_top">服务合作       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="JoinUs.html" target="_top">招生招聘       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="DB_List.html" target="_top">数据库网站     </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="Progress_List.html" target="_top">科研进展       </a></li>
+                            <li style="text-align: center;">|      </li>
+                            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                                <a style="width: 85px; text-align: center;" href="News_List.html" target="_top">动态新闻       </a></li>
+                        </ul>
+
+                    </div><!--Updateded-->
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <!--Main section-->
+    <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#e4f0f7">
+  <tr>
+    <td width="100%" align="center" valign="top" background="../../../images/cnz01ot3_01.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0" background="../../../images/cnz01ot4_01.gif">
+      <tr>
+        <td width="20" height="46">&nbsp;</td>
+        <td width="100%" valign="top" class="w12l20" style="padding-top:4px; text-align:left;">您现在的位置：<a href="HomePage.html" title="首页" class=w12l20 class="CurrChnlCls">首页</a>&nbsp;>&nbsp;<a href="Paper_index_1.html" title="论文" class=w12l20 class="CurrChnlCls">论文</a></td>
+      </tr>
+    </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td valign="top" id="cn5rightbj" style="padding:0px 0 0 0">
+		  
+		  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+            <TABLE class=blu23l28 cellSpacing=0 cellPadding=0 width="100%" border=0>
+                          <TBODY>
+                            <TR> 
+                              <TD style="FONT-WEIGHT: normal; FONT-SIZE: 20px; COLOR: #01326f; LINE-HEIGHT: 35px; PADDING-TOP: 3px; FONT-FAMILY: '黑体'; HEIGHT: 35px; TEXT-ALIGN: center" vAlign=top align=middle width="100%">论文</TD>
+                            </TR>
+                              
+                          </TBODY>
+                        </TABLE>
+        </tr>
+        <tr>
+          <td colspan="2" class="middlebox02"></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" class="middlebox1">
+		  
+		  <table width="95%" border="0" cellpadding="0" cellspacing="0" class="black_12">
+        <tr>
+          <td align="left" valign="top"><table width="100" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="6"></td>
+              </tr>
+            </table>
+			
+			 
+			<table width="100%" border="0" cellpadding="2" cellspacing="1" bgcolor="#cccccc">
+                    <tr align="center" bgcolor="#D7E9F3">
+                     
+                      <td width="187" height="26">论文题目</td>
+					  <td width="94">第一作者</td>
+                      <td width="94">联系作者</td>
+                      <td width="127">刊物名称</td>
+                      <td width="48">年</td>
+					  <td width="30">卷</td>
+					  <td width="30">期</td>
+					  <td width="75">页</td>
+                    </tr>
+                    
+                    
+                    
+                    <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>EcoSynther: A Customized Platform To Explore the Biosynthetic Potential in E. coli</a></td>
+					  <td align="left">Ding, S.</td>
+                      <td align="left">Ding, S.; Liao, X.; Tu, W.; Wu, L.; Tian, Y.; Sun, Q.; Chen, J.; Hu, Q. N.</td>
+                      <td align="left">ACS Chem Biol</td>
+                      <td align="center">2017</td>
+					  <td align="center"></td>
+					  <td align="center">12</td>
+					  <td align="center">2823-2829</td>
+                    </tr>
+                    
+                    <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>One-Pot Biosynthesis of High-Concentration alpha-Glucose 1-Phosphate from Starch by Sequential Addition of Three Hyperthermophilic Enzymes</a></td>
+					  <td align="left">Zhou, W.</td>
+                      <td align="left">You, C.; Ma, H.; Ma, Y.; Zhang, Y. H.</td>
+                      <td align="left">Journal of agricultural and food chemistry</td>
+                      <td align="center">2016</td>
+					  <td align="center"></td>
+					  <td align="center">64</td>
+					  <td align="center">1777-1783</td>
+                    </tr>
+                    
+                    <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>An engineered non-oxidative glycolysis pathway for acetone production in Escherichia coli</a></td>
+					  <td align="left">Yang, X.</td>
+                      <td align="left">Yuan, Q.; Zheng, Y.; Ma, H.; Chen, T.; Zhao, X.</td>
+                      <td align="left">Biotechnology letters</td>
+                      <td align="center">2016</td>
+					  <td align="center"></td>
+					  <td align="center">38</td>
+					  <td align="center">1359-1365</td>
+                    </tr>
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13> Discovery of Novel Hepatitis C Virus NS5B Polymerase Inhibitors by Combining Random Forest, Multiple e-Pharmacophore Modeling and Docking</a></td>
+					  <td align="left">Wei, Y.</td>
+                      <td align="left">Li, J.; Qing, J.; Huang, M.; Wu, M.; Gao, F.; Li, D.; Hong, Z.; Kong, L.; Huang, W.; Lin, J.</td>
+                      <td align="left">PloS one</td>
+                      <td align="center">2016</td>
+					  <td align="center"></td>
+					  <td align="center">11</td>
+					  <td align="center"> e0148181</td>
+                    </tr>
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>Improving chemical similarity ensemble approach in target prediction</a></td>
+					  <td align="left">Wang, Z.</td>
+                      <td align="left">Liang, L.; Yin, Z.; Lin, J.</td>
+                      <td align="left">Journal of cheminformatics</td>
+                      <td align="center">2016</td>
+					  <td align="center">8</td>
+					  <td align="center">20</td>
+					  <td align="center"></td>
+                    </tr>
+
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>Production of 5-aminolevulinic acid by cell free multi-enzyme catalysis</a></td>
+					  <td align="left">Meng, Q.</td>
+                      <td align="left">Zhang, Y.; Ju, X.; Ma, C.; Ma, H.; Chen, J.; Zheng, P.; Sun, J.; Zhu, J.; Ma, Y.; Zhao, X.; Chen, T.</td>
+                      <td align="left">Journal of biotechnology</td>
+                      <td align="center">2016</td>
+					  <td align="center"></td>
+					  <td align="center">226</td>
+					  <td align="center">8-13</td>
+                    </tr>
+
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>Engineering a d-lactate dehydrogenase that can super-efficiently utilize NADPH and NADH as cofactors</a></td>
+					  <td align="left">Meng, H.</td>
+                      <td align="left">Liu, P.; Sun, H.; Cai, Z.; Zhou, J.; Lin, J.; Li, Y.</td>
+                      <td align="left">Scientific reports 2016</td>
+                      <td align="center">2016</td>
+					  <td align="center">6</td>
+					  <td align="center"></td>
+					  <td align="center">24887.</td>
+                    </tr>
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>Activation and conformational dynamics of a class B G-protein-coupled glucagon receptor</a></td>
+					  <td align="left">Li, Y.</td>
+                      <td align="left">Sun, J.; Li, D.; Lin, J.</td>
+                      <td align="left">Physical chemistry chemical physics : PCCP 2016</td>
+                      <td align="center">2016</td>
+					  <td align="center">18</td>
+					  <td align="center"></td>
+					  <td align="center">12642-50</td>
+                    </tr>
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>Predicting genetic modification targets based on metabolic network analysis--a review</a></td>
+					  <td align="left">Li, P.</td>
+                      <td align="left">Ma, H.; Zhao, X.; Chen, T.</td>
+                      <td align="left">Chinese journal of biotechnology</td>
+                      <td align="center">2016</td>
+					  <td align="center"></td>
+					  <td align="center">32</td>
+					  <td align="center">1-13</td>
+                    </tr>
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>Crystal Structure of the Core Region of Hantavirus Nucleocapsid Protein Reveals the Mechanism for Ribonucleoprotein Complex Formation</a></td>
+					  <td align="left">Guo, Y.</td>
+                      <td align="left">Wang, W.; Sun, Y.; Ma, C.; Wang, X.; Wang, X.; Liu, P.; Shen, S.; Li, B.; Lin, J.; Deng, F.; Wang, H.; Lou, Z.</td>
+                      <td align="left">Journal of virology</td>
+                      <td align="center">2016</td>
+					  <td align="center"></td>
+					  <td align="center">90</td>
+					  <td align="center">1048-61</td>
+                    </tr>
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13> Identification of a small molecule that simultaneously suppresses virulence and antibiotic resistance of Pseudomonas aeruginosa</a></td>
+					  <td align="left">Guo, Q.</td>
+                      <td align="left">Wei, Y.; Xia, B.; Jin, Y.; Liu, C.; Pan, X.; Shi, J.; Zhu, F.; Li, J.; Qian, L.; Liu, X.; Cheng, Z.; Jin, S.; Lin, J.; Wu, W.</td>
+                      <td align="left">Sci Rep 2016</td>
+                      <td align="center">2016</td>
+					  <td align="center"></td>
+					  <td align="center">6</td>
+					  <td align="center">19141</td>
+                    </tr>
+
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>Metabolic engineering of Bacillus subtilis for chiral pure meso-2,3-butanediol production</a></td>
+					  <td align="left">Fu, J.</td>
+                      <td align="left">Huo, G.; Feng, L.; Mao, Y.; Wang, Z.; Ma, H.; Chen, T.; Zhao, X.</td>
+                      <td align="left">Biotechnology for biofuels</td>
+                      <td align="center">2016</td>
+					  <td align="center"></td>
+					  <td align="center">9</td>
+					  <td align="center">90</td>
+                    </tr>
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>Determination of key enzymes for threonine synthesis through in vitro metabolic pathway analysis</a></td>
+					  <td align="left">Zhang, Y.</td>
+                      <td align="left">Meng, Q.; Ma, H.; Liu, Y.; Cao, G.; Zhang, X.; Zheng, P.; Sun, J.; Zhang, D.; Jiang, W.; Ma, Y.</td>
+                      <td align="left">Microbial cell factories</td>
+                      <td align="center">2015</td>
+					  <td align="center"></td>
+					  <td align="center">14</td>
+					  <td align="center">86</td>
+                    </tr>
+
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>An insight into antagonist binding and induced conformational dynamics of class B GPCR corticotropin-releasing factor receptor 1</a></td>
+					  <td align="left">Xu, J.</td>
+                      <td align="left"> Wang, Z.; Liu, P.; Li, D.; Lin, J.</td>
+                      <td align="left">Molecular bioSystems</td>
+                      <td align="center">2015</td>
+					  <td align="center"></td>
+					  <td align="center">11</td>
+					  <td align="center">2042-50</td>
+                    </tr>
+                    
+                <tr bgcolor="#f2f7f1">
+                      
+                      <td height="26" align="left"><a href="about:blank" target="_blank" class=black13>Multistage virtual screening and identification of novel HIV-1 protease inhibitors by integrating SVM, shape, pharmacophore and docking methods</a></td>
+					  <td align="left">Wei, Y.</td>
+                      <td align="left">Li, J.; Chen, Z.; Wang, F.; Huang, W.; Hong, Z.; Lin, J.</td>
+                      <td align="left">European journal of medicinal chemistry</td>
+                      <td align="center">2015</td>
+					  <td align="center"></td>
+					  <td align="center">101</td>
+					  <td align="center">409-18</td>
+                </tr>
+            </table>
+		  </td>
+        </tr>
+      </table>
+		  
+            <table width="95%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="40" align="right" bgcolor="#F3F3F3">  共5页&nbsp;&nbsp;<a id='pagenav_head' class="h12" style="padding-left:3px;padding-right:3px;"target='_self' href='Paper_index_1.html'>首页</a><a id='pagenav_1' class="h12" style="padding-left:3px;padding-right:3px;"target='_self' href='Paper_index_2.html'>上一页</a><a id='pagenav_0' class="h12" style="padding-left:3px;padding-right:3px;"target='_self' href='Paper_index_1.html'>1</a><a id='pagenav_1' class="h12" style="padding-left:3px;padding-right:3px;"target='_self' href='Paper_index_2.html'>2</a><span id='pagenav_2' style="color:#FF0000;padding-left:3px;padding-right:3px;">3</span><a id='pagenav_3' class="h12" style="padding-left:3px;padding-right:3px;"target='_self' href='Paper_index_4.html'>4</a><a id='pagenav_4' class="h12" style="padding-left:3px;padding-right:3px;"target='_self' href='Paper_index_5.html'>5</a><a id='pagenav_3' class="h12" style="padding-left:3px;padding-right:3px;"target='_self' href='Paper_index_4.html'>下一页</a><a id='pagenav_tail' class="h12" style="padding-left:3px;padding-right:3px;"target='_self' href='Paper_index_5.html'>尾页</a>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+			  </td>
+			   
+		   <td width="6" valign="top" bgcolor="#E3EFF7"><img src="../../images/cnz01ot6.gif" width="6" height="164" /></td>
+        </tr>
+      </table>
+	  </td>
+  </tr>
+</table>
+
+
+    
+        
+        
+        
+        
+        <!--Bottom section-->
+    <table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="1000"><img width="1000" height="9" src="images/cnz01ot8.gif"></td></tr></tbody>
+
+    </table>
+    <table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr></tbody>
+
+    </table>
+    <table width="1000" height="8" align="center" bgcolor="#e4f0f7" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="1000"></td></tr></tbody></table>
+    <table width="1000" height="3" align="center" bgcolor="#387fc6" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="982" align="right"></td></tr></tbody></table>
+    <table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="1000" height="3" bgcolor="#1a76bb" colspan="4"></td></tr>
+            <tr>
+                <td width="285" height="100" align="center">
+                    <a href="http://www.cas.cn/" target="_blank"><img width="200" height="77" src="images/cas_logo.gif" border="0"></a></td>
+                <td width="715" align="left" class="cnphui12_20" style="color: rgb(0, 0, 0); line-height: 22px; letter-spacing: 1px; padding-top: 2px; font-family: Lucida Sans Unicode,Verdana; font-size: 12px;">Copyright 2012 All Rights Reserved 中国科学院天津工业生物技术研究所　版权所有<br>      通讯地址：天津空港经济区西七道32号，邮编：300308<br>电话：022-84861997/84861977，传真：022-84861926，邮箱：tib_zh(AT)tib.cas.cn<br>京ICP备05002857号</td></tr></tbody></table>
+
+</body>
+</html>
